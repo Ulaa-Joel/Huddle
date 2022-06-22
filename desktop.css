@@ -21,92 +21,154 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 [Ionicons](https://ionicons.com/)
 font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif; */
-@media screen and (max-width:1440px) {
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+html {
+    font-size: 18px;
+}
+
 header {
     background-image: url(/images/bg-hero-desktop.svg);
     background-size: contain;  
     background-color: hsl(193, 100%, 96%);  
 }
-    
-.one {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-    width: auto;
-    justify-content: center;
-    /* align-items: center; */
-}
-.button {
-    float: right;
-    background-color: turquoise;
-    color: hsl(0, 4%, 5%);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-style: hidden;
-    border-radius: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: x-small;
-}
-.pad {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-.first {
-    display: flex;
-    width: 96%;
-    margin: auto;
-    align-items: center;
-    padding: 20px;
-}
-.left { 
-    padding-right: 25px;
-}
-/* .head { */
-    display: flex;
-    width:90%;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-color: gray;
-    border-style: ridge;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    
-}
-/* .right {
-    flex: 50%;
-    padding: 20px;
-    float: right;
-    justify-content: right;
-}
-h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-} */
-small {
-    font-family: 'Open Sans', sans-serif;
-    font-size: xx-small;
-}
-.button2 {
-    background-color:hsl(322, 100%, 66%);
-    color: hsl(193, 100%, 96%);
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-style: hidden;
-    border-radius: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: x-small;
+@media screen and (max-width:1440px) and (min-width:376px){
+    .one {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        width: auto;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .button {
+        float: right;
+        background-color: turquoise;
+        color: hsl(0, 4%, 5%);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-style: hidden;
+        border-radius: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: x-small;
+    }
+    .pad {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .first {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .left { 
+        padding-right: 25px;
+        flex: 40%;
+    }
+    .right {
+        flex: 40%;
+        /* padding: 20px; */
+        /* float: right; */
+        /* justify-content: right; */
+    }
+    .head {
+        display: flex;
+        width:90%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-style: groove;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        
+    }
+
+    h3 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    h4 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 9px;
+    }
+    .button2 {
+        background-color:hsl(322, 100%, 66%);
+        color: hsl(193, 100%, 96%);
+        margin-top: 1px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-style: hidden;
+        border-radius: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 8px;
+    }
+    .position {
+        background-color: white;
+        position: relative;
+        margin: 0 auto;
+        top: 50px;
+        width: 60%;
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .button3 {
+        background-color:hsl(322, 100%, 66%);
+        color: hsl(193, 100%, 96%);
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-style: hidden;
+        border-radius: 20px;
+        font-family: 'Open Sans', sans-serif;
+        display: block;
+    }
+    .footer {
+        margin: auto;
+        width: auto;
+        background-color: hsl(192, 100%, 9%);
+        height: 300px;
+        display: flex;
+        /* flex-direction: column; */
+        padding-top: 100px;
+        padding-left: 60px;
+    }
+    .bottom-logo {
+        filter: grayscale(100%);
+        filter: brightness(0%);
+        filter: invert(98%) sepia(100%) saturate(7%) hue-rotate(117deg) brightness(101%) contrast(102%);
+    }
+    .footer p {
+        font-size: 10px;
+    }
+    .style1 {
+        width: 30%;
+    }
+    .style2 {
+        width: 30%;
+        padding-left: 10%;
+        margin-top: 30px;
+    }
 }
